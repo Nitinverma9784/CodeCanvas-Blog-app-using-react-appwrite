@@ -1,0 +1,58 @@
+header {
+    background-color: #f8f9fa; /* Light gray background for the header */
+    padding: 1rem 0; /* Adjusted padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav items */
+  }
+  
+  .logo {
+    width: 70px; /* Ensure logo size is consistent */
+  }
+  
+  ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Flexbox for horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin-left: 1.5rem; /* Space between nav items */
+  }
+  
+  button {
+    background-color: #007bff; /* Soft blue for primary buttons */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded button */
+    padding: 0.5rem 1.5rem; /* Padding for button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+  }
+  
+  /* Optional: Add styles for links if needed */
+  a {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    transition: color 0.3s ease; /* Smooth transition for color */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
