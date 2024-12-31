@@ -40,10 +40,13 @@ function AllPosts() {
     return (
         <div className="w-full py-8">
             <Container>
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap justify-center gap-6">
                     {posts.length > 0 ? (
                         posts.map((post) => (
-                            <div className="p-2 w-1/4" key={post.$id}>
+                            <div
+                                key={post.$id}
+                                className="flex-shrink-0 w-80" // Fixed width for each PostCard
+                            >
                                 <PostCard {...post} />
                             </div>
                         ))
