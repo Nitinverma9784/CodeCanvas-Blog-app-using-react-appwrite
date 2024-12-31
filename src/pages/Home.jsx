@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import appwriteService from "../appwrite/config";
 import { Container, PostCard } from '../components';
 import authService from '../appwrite/auth';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
     const [currentUser, setCurrentUser] = useState(null); // Track current user
     const [posts, setPosts] = useState([]);
+    const navigate = useNavigate()
 
     // Fetch the current user on component mount
     useEffect(() => {
@@ -34,9 +36,7 @@ function Home() {
     }, [currentUser]);
 
     const handleLogin = () => {
-        authService.login().then(() => {
-            authService.getCurrentUser().then((user) => setCurrentUser(user));
-        });
+        navigate("/login")
     };
 
     const handleLogout = () => {
